@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="group_show_fields_name" model="res.groups">
+            <field name="name">Show fields name in views</field>
+            <field name="comment">Replace fields label with fields name in views (when in debug mode).</field>
+            <!-- <field name="category_id" ref="base.module_category_usability"/> -->
+        </record>
+
+    </data>
+</odoo>
