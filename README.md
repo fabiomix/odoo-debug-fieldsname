@@ -5,7 +5,7 @@ This should be more practical instead of "hovering" over each field with the deb
 Tooltips obviously remains available for more details (like domain, comodel, ...)
 
 ```
-git clone https://github.com/fabiomix/odoo-debug-fieldsname.git -b 12.0 debug_fieldsname
+git clone https://github.com/fabiomix/odoo-debug-fieldsname.git -b 14.0 debug_fieldsname
 ```
 
 ![screenshot](.images/screenshot.png)

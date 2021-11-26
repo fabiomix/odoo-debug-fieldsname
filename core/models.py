@@ -13,11 +13,11 @@ class BaseModel(models.AbstractModel):
     def fields_get(self, allfields=None, attributes=None):
         res = super(BaseModel, self).fields_get(allfields, attributes)
 
-        # _logger.info("debug mode: %s", request.debug)
+        # _logger.info("debug mode: %s", request.session.debug)
         # _logger.info("group_no_one: %s", self.user_has_groups('base.group_no_one'))
 
         # check if we are in debug mode and the feature is enabled
-        if request.debug and self.user_has_groups('debug_fieldsname.group_show_fields_name'):
+        if request.session.debug and self.user_has_groups('debug_fieldsname.group_show_fields_name'):
             for field in res:
                 res[field]['string'] = field
 
