@@ -17,7 +17,7 @@ class BaseModel(models.AbstractModel):
         # _logger.info("group_no_one: %s", self.user_has_groups('base.group_no_one'))
 
         # check if we are in debug mode and the feature is enabled
-        if request.session.debug and self.user_has_groups('debug_fieldsname.group_show_fields_name'):
+        if request and request.session.debug and self.user_has_groups('debug_fieldsname.group_show_fields_name'):
             for field in res:
                 res[field]['string'] = field
 
